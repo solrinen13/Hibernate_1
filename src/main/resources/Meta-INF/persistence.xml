@@ -7,9 +7,9 @@
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <properties>
             <property name="javax.persistence.jdbc.url"
-                      value="jdbc:postgresql://localhost:5432/skypro"/>
+                      value="jdbc:postgresql://localhost:5432/forHibernate!!!"/>
             <property name="javax.persistence.jdbc.user" value="postgres"/>
-            <property name="javax.persistence.jdbc.password" value="postgres"/>
+            <property name="javax.persistence.jdbc.password" value="hos"/>
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
 
             <property name="hibernate.enable_lazy_load_no_trans" value="true"/>

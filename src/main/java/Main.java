@@ -4,8 +4,8 @@ import jakarta.persistence.Persistence;
 import jakarta.persistence.TypedQuery;
 import model.Students;
 
-import java.util.List;
 
+import java.util.List;
 public class Main {
     public static void main(String[] args) {
         // Создаем экземпляр EntityManagerFactory, указывая persistence unit
@@ -19,12 +19,11 @@ public class Main {
 
         // Создаем JPQL-запрос для выборки студентов с возрастом больше minAge
         String jpqlQuery = "SELECT s FROM Students s WHERE s.age > :minAge";
-
         // Создаем объект запроса с указанием типа возвращаемого результата (Student.class)
         TypedQuery<Students> query = entityManager.createQuery(jpqlQuery, Students.class);
 
         // Устанавливаем значение параметра minAge в запросе
-        query.setParameter("minAge", 18);
+          query.setParameter("minAge", 1);
 
         // Выполняем запрос и получаем результат в виде списка студентов
         List<Students> students = query.getResultList();
